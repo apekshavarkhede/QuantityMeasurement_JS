@@ -17,4 +17,8 @@ describe('Testing for Quantity Check', function () {
     it('given 0 Feet should return type as number ', function () {
         assert.typeOf(quantity.feetConverter(0), 'number')
     })
+
+    it('given 0 inch and 0 inch when check for equality should return true',function(){
+        assert.equal(quantity.inchConverter(0),quantity.inchConverter(0))
+    })
 })
