@@ -66,6 +66,9 @@ describe('Testing for Quantity Check', function () {
         assert.equal(quantity.inchConverter(36), quantity.yardConverter(1))
     })
 
+    it('given 1 Yard and 3 Feet when check for equality should return true', function () {
+        assert.equal(quantity.yardConverter(1), quantity.feetConverter(3))
+    })
 
 
 
