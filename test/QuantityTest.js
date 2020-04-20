@@ -7,4 +7,8 @@ describe('Testing for Quantity Check', function () {
         assert.equal(true, quantityCheck)
     })
 
+    it('should return false if quantities are not equal', function () {
+        let quantityCheck = quantity.checkQuantity(1, 0);
+        assert.notEqual(true, quantityCheck)
+    })
 })
