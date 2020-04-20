@@ -26,5 +26,8 @@ describe('Testing for Quantity Check', function () {
         assert.notEqual(quantity.inchConverter(0), quantity.inchConverter(1))
     })
 
+    it('given 0 inch and null when check for equality should return false', function () {
+        assert.isNull(quantity.inchConverter(null), quantity.inchConverter(1))
+    })
 
 })
