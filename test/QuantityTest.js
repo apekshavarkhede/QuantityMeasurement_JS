@@ -54,5 +54,9 @@ describe('Testing for Quantity Check', function () {
         assert.notEqual(quantity.feetConverter(1), quantity.yardConverter(1))
     })
 
+    it('given 1 Inch and 1 Yard when check for equality should return false', function () {
+        assert.notEqual(quantity.inchConverter(1), quantity.yardConverter(1))
+    })
+
 
 })
