@@ -8,5 +8,9 @@ class Quantity {
     return length;
   }
 
+  yardConverter(length) {
+    return length * 36;
+  }
+
 }
 module.exports = new Quantity();

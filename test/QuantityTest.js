@@ -34,20 +34,24 @@ describe('Testing for Quantity Check', function () {
         assert.equal('number', typeof (quantity.inchConverter(0)))
     })
 
-    it('given 1 feet and 1 inch when check for equality should return false',function(){
-        assert.notEqual(quantity.feetConverter(1),quantity.inchConverter(1))
+    it('given 1 feet and 1 inch when check for equality should return false', function () {
+        assert.notEqual(quantity.feetConverter(1), quantity.inchConverter(1))
     })
 
-    it('given 1 feet and 1 inch when check for equality should return false',function(){
-        assert.notEqual(quantity.feetConverter(1),quantity.inchConverter(1))
+    it('given 1 feet and 1 inch when check for equality should return false', function () {
+        assert.notEqual(quantity.feetConverter(1), quantity.inchConverter(1))
     })
 
-    it('given 1 Feet and 12 inches when check for equality should true',function(){
-        assert.equal(quantity.feetConverter(1),quantity.inchConverter(12))
+    it('given 1 Feet and 12 inches when check for equality should true', function () {
+        assert.equal(quantity.feetConverter(1), quantity.inchConverter(12))
     })
 
-    it('given 3 Feet and 1 Yard when check for equality should return true',function(){
-        assert.equal(quantity.feetConverter(3),quantity.yardConverter(1))
+    it('given 3 Feet and 1 Yard when check for equality should return true', function () {
+        assert.equal(quantity.feetConverter(3), quantity.yardConverter(1))
+    })
+
+    it('given 1 Feet and 1 Yard when check for equality should return false', function () {
+        assert.notEqual(quantity.feetConverter(1), quantity.yardConverter(1))
     })
 
 
