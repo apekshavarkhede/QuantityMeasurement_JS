@@ -34,4 +34,8 @@ describe('Testing for Quantity Check', function () {
         assert.equal('number', typeof (quantity.inchConverter(0)))
     })
 
+    it('given 1 feet and 1 inch when check for equality should return false',function(){
+        assert.notEqual(quantity.feetConverter(1),quantity.inchConverter(1))
+    })
+
 })
