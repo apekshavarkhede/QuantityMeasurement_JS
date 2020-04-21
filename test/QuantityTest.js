@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-var quantity = require('../quantity')
+var quantity = require('../main/quantity')
 
 describe('Testing for Quantity Check', function () {
     it('should return true if quantities are equal', function () {
