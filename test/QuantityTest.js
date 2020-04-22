@@ -111,4 +111,9 @@ describe('Testing for Quantity Check', function () {
     it('given 1 liter and 1000 milileters when check for equality should return true', function () {
         assert.equal(volume.literConverter(1), volume.mlConverter(1000))
     })
+
+    it('given 1 gallon and 1 gallon when add should return 7.57 liters', function () {
+        let resultOfAddition = volume.addVolumes(volume.gallonConverter(1), volume.gallonConverter)
+    })
+
 })
