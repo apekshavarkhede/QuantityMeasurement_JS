@@ -84,5 +84,9 @@ describe('Testing for Quantity Check', function () {
         assert.equal(4, resultOfAddition)
     })
 
+    it('given 1 Feet and 2 inch when add should return 4 inches', function () {
+        let resultOfAddition = quantity.addLength(quantity.feetConverter(1), quantity.inchConverter(2))
+        assert.equal(14, resultOfAddition)
+    })
 
 })
