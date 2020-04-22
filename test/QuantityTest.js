@@ -2,6 +2,7 @@ var assert = require('chai').assert;
 var quantity = require('../main/quantity')
 var volume = require('../main/volume')
 var weight = require('../main/weights')
+var temperature = require('../main/temperature')
 
 describe('Testing for Quantity Check', function () {
     it('should return true if quantities are equal', function () {
@@ -144,7 +145,9 @@ describe('Testing for Quantity Check', function () {
     it('given 1 tonne and 1000 grams when add should return 1001 kg ', function () {
         let resultOfAddition = weight.addWeights(weight.tonneConverter(1), weight.gramsConverter(1000))
         assert.equal(1001, resultOfAddition)
-
     })
 
+    it('given 1 celcius and  33.8 fahrenheit when check for equality should return true', function () {
+        assert.equal(temperature.celciusConveter(1), temperature.fahrenheitConverter(33.8))
+    })
 })
