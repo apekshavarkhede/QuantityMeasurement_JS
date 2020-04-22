@@ -7,5 +7,9 @@ class Volume {
     literConverter(value) {
         return value
     }
+
+    mlConverter(value) {
+        return (value * (0.001))
+    }
 }
 module.exports = new Volume();
