@@ -94,6 +94,11 @@ describe('Testing for Quantity Check', function () {
         assert.equal(24, resultOfAddition)
     })
 
+    it('given 2 Inch and 2.5 cm when add should return 3 inches', function () {
+        let resultOfAddition = quantity.addLength(quantity.inchConverter(2), quantity.cmConverter(2.5))
+        assert.equal(3, resultOfAddition)
+    })
+
 
 
 })
