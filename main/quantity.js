@@ -1,4 +1,4 @@
-class Quantity {
+class Length {
 
   feetConverter(length) {
     return length * 12;
@@ -21,4 +21,4 @@ class Quantity {
   }
 
 }
-module.exports = new Quantity();
+module.exports = new Length();
