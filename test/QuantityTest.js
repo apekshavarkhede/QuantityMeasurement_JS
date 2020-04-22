@@ -132,4 +132,8 @@ describe('Testing for Quantity Check', function () {
         assert.equal(weight.kgConverter(1), weight.gramsConverter(1000))
     })
 
+    it('given 1 tonne and 1000 kg when check for equality should return true',function(){
+        assert.equal(weight.tonneConverter(1),weight.kgConverter(1000))
+    })
+
 })

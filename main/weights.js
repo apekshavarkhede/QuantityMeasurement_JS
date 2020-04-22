@@ -1,12 +1,15 @@
 class WeightConverter {
 
     kgConverter(weight) {
-        return weight * 1000
-    }
-
-    gramsConverter(weight) {
         return weight
     }
 
+    gramsConverter(weight) {
+        return weight / 1000
+    }
+
+    tonneConverter(weight) {
+        return weight * 1000
+    }
 }
 module.exports = new WeightConverter();
