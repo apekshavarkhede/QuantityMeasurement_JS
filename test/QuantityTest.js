@@ -22,6 +22,7 @@ describe('Testing for Quantity Check', function () {
         assert.equal(quantity.inchConverter(0), quantity.inchConverter(0))
     })
 
+
     it('given 0 inch and 1 inch when check for equality should return false', function () {
         assert.notEqual(quantity.inchConverter(0), quantity.inchConverter(1))
     })
@@ -70,6 +71,8 @@ describe('Testing for Quantity Check', function () {
         assert.equal(quantity.yardConverter(1), quantity.feetConverter(3))
     })
 
-
-
+    it('given 1 Inch  and 2.54 cm when check for equality should return true', function () {
+        assert.equal(quantity.inchConverter(1), quantity.cmConverter(2.54))
+    })
+    
 })
