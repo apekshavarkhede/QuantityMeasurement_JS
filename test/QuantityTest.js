@@ -104,5 +104,10 @@ describe('Testing for Quantity Check', function () {
         assert.equal(volume.gallonConverter(1), volume.gallonConverter(1))
     })
 
+    it('given 1 gallon and 3.78 liters when check for equality shoul return true', function () {
+        assert.equal(volume.gallonConverter(1), volume.literConverter(3.78))
+    })
+
+
 
 })
