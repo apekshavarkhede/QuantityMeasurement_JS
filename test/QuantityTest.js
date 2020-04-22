@@ -1,5 +1,6 @@
 var assert = require('chai').assert;
 var quantity = require('../main/quantity')
+var volume = require('../main/volume')
 
 describe('Testing for Quantity Check', function () {
     it('should return true if quantities are equal', function () {
@@ -99,6 +100,9 @@ describe('Testing for Quantity Check', function () {
         assert.equal(3, resultOfAddition)
     })
 
+    it('given 1 gallon and 1 gallon when check for equality shoul return true', function () {
+        assert.equal(volume.gallonConverter(1), volume.gallonConverter(1))
+    })
 
 
 })
