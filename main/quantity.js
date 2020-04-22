@@ -13,7 +13,7 @@ class Quantity {
   }
 
   cmConverter(length) {
-    return Math.ceil(length * 0.25)
+    return Math.ceil(Math.ceil(length) / (2.54))
   }
 
 }
