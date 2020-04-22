@@ -72,11 +72,16 @@ describe('Testing for Quantity Check', function () {
     })
 
     it('given 1 Inch  and 2.54 cm when check for equality should return true', function () {
-        assert.equal(quantity.inchConverter(1), quantity.cmToInchConverter(2.54))
+        assert.equal(quantity.inchConverter(1), quantity.cmConverter(2.54))
     })
 
     it('given 2 Inch  and 5 cm when check for equality should return true', function () {
-        assert.equal(quantity.inchConverter(2), quantity.cmToInchConverter(5))
+        assert.equal(quantity.inchConverter(2), quantity.cmConverter(5))
+    })
+
+    it('given 2 inch and 2 inch when add should return 4 inches', function () {
+        let resultOfAddition = quantity.addLength(quantity.inchConverter(2), quantity.inchConverter(2))
+        assert.equal(4, resultOfAddition)
     })
 
 

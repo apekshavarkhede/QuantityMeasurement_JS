@@ -16,5 +16,9 @@ class Quantity {
     return Math.ceil((length) / (2.54))
   }
 
+  addLength(length1,length2){
+    return length1+length2;
+  }
+
 }
 module.exports = new Quantity();
