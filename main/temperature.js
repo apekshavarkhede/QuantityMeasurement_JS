@@ -1,7 +1,9 @@
 class Temperature {
 
+    // convert celcius to fahrenheit
     celciusConveter(temperature) {
-        return temperature * (9 / 5) + 32
+        let result = temperature * (9 / 5) + 32
+        return result
     }
 
     fahrenheitConverter(temperature) {
